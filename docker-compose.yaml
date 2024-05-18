@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    container_name: website-flask-c
+    command: python3 src/run.py
+    ports:
+      - 8080:80
+    volumes:
+      - .:/code
